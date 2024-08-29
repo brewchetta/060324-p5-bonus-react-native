@@ -32,6 +32,22 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="countries"
+        options={{
+          title: 'Countries',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'globe' : 'globe-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="dish/[dish]"
+        options={{
+          title: 'Dish',
+          href: null,
+        }}
+      />
     </Tabs>
   );
 }
